@@ -1,0 +1,175 @@
+* {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #F2F9FE;
+    transition: .3s ease all;
+}
+
+body.dark {
+    background-color: #111729;
+}
+
+p{
+    font-family: "poppins",sans-serif;
+}
+
+p.dark {
+    color: #FFFFFF;
+    transition: .3s ease all;
+}
+
+li {
+    font-family: "poppins", sans-serif;
+}
+
+#alarado_image {
+    position: absolute;
+    top: 2.5vh;
+    left: 5vh;
+}
+
+#header_list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#header_list li{
+    padding-left: 5vh;
+    padding-top: 1.5vh;
+    color: #909193;
+}
+
+#header_list li.About {
+    color: black;
+}
+
+#header_list li.dark {
+    color: white;
+}
+
+
+.switch_mode {
+    position: relative;
+    display: flex;
+    left: 90%;
+    margin-top: -20px;
+    border-radius: 1000px;
+    cursor: pointer;
+    outline: none;
+}
+
+.switch_mode img {
+    display: block;
+    background: none;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(178deg) brightness(106%) contrast(106%);
+}
+
+.switch_mode::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: white;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    left: unset;
+    right: 0;
+    border-radius: 100px;
+    transition: .3 ease all;
+    box-shadow: #111729;
+}
+
+.switch_mode.active{
+    background-color: #223344;
+    border-color: white;
+}
+
+.switch_mode.active img {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(178deg) brightness(106%) contrast(106%);
+}
+
+.switch_mode.active::after{
+    left: 0;
+    right: unset;
+}
+
+#Simple_text { 
+    position: absolute;
+    font-weight: 500;
+    font-size:14px;
+    top: 16%;
+    left: 5%;
+}
+
+#Actions_text {
+    position: absolute;
+    font-size:60px;
+    font-weight: bold;
+    top: 20%;
+    left: 5%;
+}
+
+#Fastest_text {
+    position: absolute;
+    font-size: 18px;
+    color: #909193;
+    top: 55%;
+    left: 5%;
+
+}
+
+#Get_button {
+    position: absolute;
+    background-color: #2A4DD0;
+    width: 21vh;
+    height: 7.5vh;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+    top: 65%;
+    left: 5%;
+    text-align: center;
+    padding: 20px;
+}
+
+#main_image {
+    position: relative;
+    width: 50%;
+    height: auto;
+    left: 45%;
+    top: 40%;
+}
+
+#refer_text {
+    position: absolute;
+    top: 67%;
+    left: 20%;
+    font-size: 16px;
+}
+
+#refer_text a{
+    color: #2A4DD0;
+    font-weight: 500;
+}
+
+#list_above_Button {
+    position:absolute;
+    display: flex;
+    list-style: none;
+    top: 78%;
+    left: 5%;
+}
+
+#list_above_Button li {
+    padding-right: 5vh;
+    padding-left: 35px;
+    background: url('Resources/Done_ring_round_fill.svg') left center no-repeat;
+    font-size: 14px;
+    color: #909193;
+}
+
