@@ -13,12 +13,12 @@ boton_switch.addEventListener('click',() => {
   });
 
   if (document.body.classList.contains('dark')) {
-    alarado_image.src = 'resources/alarado-icon-homepage-dark.svg';
+    alarado_image.src = 'Resources/alarado-icon-homepage-dark.svg';
     alarado_image.alt = 'Icono en modo oscuro';
     
   } else {
   
-    alarado_image.src = 'resources/alarado-icon-homepage.svg';
+    alarado_image.src = 'Resources/alarado-icon-homepage.svg';
     alarado_image.alt = 'Icono en modo claro';
   }
 });
