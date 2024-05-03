@@ -173,7 +173,7 @@ li {
 #list_above_Button li {
     padding-right: 5vh;
     padding-left: 35px;
-    background: url('Resources/Done_ring_round_fill.svg') left center no-repeat;
+    background: url('resources/Done_ring_round_fill.svg') left center no-repeat;
     font-size: 14px;
     color: #909193;
 }
